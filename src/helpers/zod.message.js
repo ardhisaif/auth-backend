@@ -30,5 +30,5 @@ export function zodStringDate(key, nonempty = true) {
 }
 
 export function email() {
-  return zodString('email').email('Silahkan masukan alamat email yang valid (contoh : name@company.com)').min(1, 'email tidak boleh kosong')
+  return zodString('email').email('Please enter a valid email address (e.g., name@company.com)').min(1, 'email cannot be empty')
 }
